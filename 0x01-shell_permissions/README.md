@@ -5,4 +5,3 @@
 4- creating an emptyfiel
 5- what script adds an executable
 6- allowing multiple permissions
-
