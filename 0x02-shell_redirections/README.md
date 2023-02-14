@@ -14,8 +14,7 @@
 
 6-third_line displays the 3rd line of the file iacta.
 
-7-file creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
-
+7-file creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending with a new line.
 8-cwd_state writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
 9-duplicate_last_line duplicates the last line of the file iacta.
@@ -44,11 +43,13 @@
 
 21-reverse reverse its input.
 
-22-users_and_homes displays all users and their home directories, sorted by users.
+22-users_and_homes displays all users,their home directories, sorted by users.
 
-100-empty_casks finds all empty files and directories in the current directory and all sub-directories.
+# Advanced Task
 
-101-gifs lists all the files with a .gif extension in the current directory and all its sub-directories.
+100-empty_casks searches all empty files and directories in the current directory and all sub-directories.
+
+101-gifs lists all the files with a .gif extension/type in the current directory and all its sub-dir.
 
 102-acrostic decodes acrostics that use the first letter of each line.
 
