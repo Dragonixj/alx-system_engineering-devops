@@ -1,6 +1,6 @@
 
 # 0x03. Shell, init files, variables and expansions
-##working on  creating Shell, init files, variables and expansions.
+##working on  creating Shell, init files, variables and expansions.Aurthor Elvis Fiador
 
 1-hello_you prints hello user, where user is the current Linux user.
 
