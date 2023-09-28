@@ -13,7 +13,7 @@ while [ $count -le 20 ]; do
 		echo "$count bad luck from Japan"
 		;;
 	17)
-		echo "$count bad luck from italy"
+		echo "$count bad luck from Italy"
 		;;
 	*)
 		echo "$count"
