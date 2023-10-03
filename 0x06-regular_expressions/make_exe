@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+for file in *; do
+    if [[ -f "$file" && "$file" != "README.md" ]]; then
+        chmod +x "$file"
+    fi
+done
+
