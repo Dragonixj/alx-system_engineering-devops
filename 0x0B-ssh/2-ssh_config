@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-IdentifyFile ~/.ssh/school
-PasswordAuthentication no
