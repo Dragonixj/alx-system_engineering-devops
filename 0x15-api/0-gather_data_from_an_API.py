@@ -13,18 +13,18 @@ if __name__ == "__main__":
         exit()
 
     BASE_URL = "https://jsonplaceholder.typicode.com"
+    rq = get(BASE_URL + f"/users/{employee_id}").json()
 
-    employee = get("{}/users/{}".format(BASE_URL, employee_id)).json()
-    todos = get(BASE_URL + "todos", params={"userId": argv[1]}).json()
+    todos = get(BASE_URL + f"/todos?userId={employee_id}").json()
 
-    completed = get(
-        "{}/users/{}todos?completed=true".format(BASE_URL, employee_id)
-    ).json()
-
+    completed = []
+    for task in todos:
+        if task.get("completed") is True:
+            completed.append(task.get("title"))
     print(
-        "Employee {} is done with tasks({}/{})".format(
-            employee.get("name"), len(completed), len(todos)
-        ),
-        *[t.get("title") for t in completed],
-        sep="\n\t "
+        "Employee {} is done with tasks({}/{}):".format(
+            rq.get("name"), len(completed), len(todos)
+        )
     )
+    for task in completed:
+        print("\t {}".format(task))
