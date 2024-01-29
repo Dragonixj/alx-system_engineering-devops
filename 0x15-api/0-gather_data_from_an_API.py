@@ -2,9 +2,10 @@
 """Script that gathers employee data from API:
     Returns to-do list info for a given employee id
 """
-from sys import argv
 
 from requests import get
+from sys import argv
+
 
 if __name__ == "__main__":
     try:
