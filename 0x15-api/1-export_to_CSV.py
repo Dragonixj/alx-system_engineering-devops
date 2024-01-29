@@ -9,7 +9,7 @@ from sys import argv
 from requests import get
 
 
-def fetch_data(employee_id):
+def get_data(employee_id):
     BASE_URL = "https://jsonplaceholder.typicode.com"
     rq = get(BASE_URL + f"/users/{employee_id}")
     usr = rq.json()
@@ -27,4 +27,4 @@ def fetch_data(employee_id):
 
 
 if __name__ == "__main__":
-    fetch_data(argv[1])
+    get_data(argv[1])
