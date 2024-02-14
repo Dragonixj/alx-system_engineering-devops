@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """Queries the reddit api and returns number of suscribers"""
 
-from requests import get
+import requests
 
 
 def number_of_subscribers(subreddit):
     """returns the number of subscribers to the subreddit"""
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    sub_info = get(
+    sub_info = requests.get(
         url,
         headers={"User-Agent": "My-User-Agent"},
         allow_redirects=False,
