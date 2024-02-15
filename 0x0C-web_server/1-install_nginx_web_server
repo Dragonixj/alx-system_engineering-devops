@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# A script that installs nginx server on ubuntu
-# And serves a default page index.html on the HTTP GET request
+# A script that installs nginx server on an ubuntu.
+# And serves a default page index.html on the HTTP  GET request.
 
 sudo apt-get update -y
 
 sudo apt-get install nginx -y
 
-echo 'Hello World'> /var/www/html/index.html
+echo 'Hello World!' > /var/www/html/index.html
 
 service nginx restart
